@@ -25,3 +25,6 @@ Thumbs.db
 
 # Scripts de desenvolvimento local
 view_contacts.sh
+
+# DB Browser for SQLite project files
+*.sqbpro
