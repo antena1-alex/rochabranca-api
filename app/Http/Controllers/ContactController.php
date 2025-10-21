@@ -20,6 +20,7 @@ class ContactController extends Controller
                 'last_name' => 'required|string|max:255',
                 'phone' => 'required|string|max:20',
                 'email' => 'required|email|max:255',
+                'message' => 'nullable|string|max:2000',
                 'terms_accepted' => 'required|boolean|accepted'
             ], [
                 'first_name.required' => 'O nome é obrigatório',
@@ -27,6 +28,7 @@ class ContactController extends Controller
                 'phone.required' => 'O telefone é obrigatório',
                 'email.required' => 'O email é obrigatório',
                 'email.email' => 'Formato de email inválido',
+                'message.max' => 'A mensagem não pode ter mais de 2000 caracteres',
                 'terms_accepted.required' => 'É necessário aceitar os termos',
                 'terms_accepted.accepted' => 'Você deve aceitar os termos para continuar'
             ]);

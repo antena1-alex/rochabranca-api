@@ -136,6 +136,15 @@
                         </div>
                     </div>
                 </div>
+                
+                @if(!empty($contact['message']))
+                <div class="info-box" style="margin-top: 20px;">
+                    <h3 style="margin-top: 0; color: #337AB7;">💬 Mensagem do Cliente</h3>
+                    <div style="background-color: #e9ecef; padding: 15px; border-radius: 8px; font-style: italic; line-height: 1.6;">
+                        "{{ $contact['message'] }}"
+                    </div>
+                </div>
+                @endif
             </div>
         </div>
         

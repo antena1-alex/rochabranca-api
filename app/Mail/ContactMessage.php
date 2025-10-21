@@ -20,6 +20,8 @@ class ContactMessage extends Mailable
     public function build()
     {
         return $this->subject("Novo contato recebido - Rocha Branca")
+                    ->from(config('mail.from.address'), 'Sistema Rocha Branca')
+                    ->replyTo($this->contact['email'], $this->contact['first_name'] . ' ' . $this->contact['last_name'])
                     ->view('emails.contact_message_html')
                     ->with('contact', $this->contact);
     }

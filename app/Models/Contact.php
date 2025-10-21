@@ -11,6 +11,7 @@ class Contact extends Model
         'last_name',
         'phone',
         'email',
+        'message',
         'terms_accepted'
     ];
 

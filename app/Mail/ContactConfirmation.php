@@ -20,6 +20,8 @@ class ContactConfirmation extends Mailable
     public function build()
     {
         return $this->subject("Confirmação de contato - Rocha Branca")
+                    ->from(config('mail.from.address'), 'Equipe Rocha Branca')
+                    ->replyTo('contato@rochabranca.com.br', 'Rocha Branca')
                     ->view('emails.contact_confirmation_html')
                     ->with('contact', $this->contact);
     }

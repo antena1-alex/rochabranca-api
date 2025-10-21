@@ -137,6 +137,15 @@
                 </div>
             </div>
             
+            @if(!empty($contact['message']))
+            <div class="info-summary" style="margin-top: 20px;">
+                <h4 style="margin-top: 0; color: #337AB7;">💬 Sua mensagem:</h4>
+                <div style="background-color: #e9ecef; padding: 15px; border-radius: 8px; font-style: italic; line-height: 1.6;">
+                    "{{ $contact['message'] }}"
+                </div>
+            </div>
+            @endif
+            
             <div class="timeline">
                 <h4 style="margin-top: 0; color: #856404;">⏱️ Próximos passos:</h4>
                 <ul style="margin-bottom: 0; color: #856404;">
