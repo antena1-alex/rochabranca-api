@@ -14,6 +14,7 @@
   "last_name": "string (obrigatório)",
   "phone": "string (obrigatório)",
   "email": "string - email válido (obrigatório)",
+  "message": "string (opcional - máx 2000 caracteres)",
   "terms_accepted": true (obrigatório - deve ser true)
 }
 ```
@@ -55,6 +56,7 @@ const dadosFormulario = {
   last_name: "Silva",
   phone: "(11) 99999-9999",
   email: "joao@example.com",
+  message: "Gostaria de saber mais sobre os serviços da empresa. Quando seria possível marcar uma reunião?",
   terms_accepted: true
 };
 
