@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrigado pelo seu interesse - Rocha Branca</title>
+    <title>Obrigado pelo seu contato - Rocha Branca</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body { 
@@ -256,27 +256,21 @@
                 <div class="footer-grid">
                     <div class="footer-section">
                         <div class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-                            <a style="color: #f4f4f4; text-decoration: none;" href="https://www.google.com/maps/search/?api=1&query=Fonte+Rocha+Branca+Estrada+para+Votorantim+1962+Parque+Esplanada+do+Embu+Embu+das+Artes+SP+06844-310" target="_blank">Estrada para Votorantim, 1962<br>Vila Maria Auxiliadora<br>Embu das Artes - SP</a>
+                            <span class="contact-icon">📍</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Fonte+Rocha+Branca+Estrada+para+Votorantim+1962+Parque+Esplanada+do+Embu+Embu+das+Artes+SP+06844-310" target="_blank" style="color: #9ca3af; text-decoration: none;">Estrada para Votorantim, 1962<br>Vila Maria Auxiliadora<br>Embu das Artes - SP</a>
                         </div>
                     </div>
                     
                     <div class="footer-section">
                         <div class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <a href="mailto:atendimento@aguarochabranca.com.br" style="color: #f4f4f4; text-decoration: none;">atendimento@aguarochabranca.com.br</a>
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:atendimento@aguarochabranca.com.br" style="color: #9ca3af; text-decoration: none;">atendimento@aguarochabranca.com.br</a>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
-                            <a href="https://wa.me/5511957773366" style="color: #f4f4f4; text-decoration: none;" target="_blank">+55 11 95777-3366</a>
+                            <span class="contact-icon">📱</span>
+                            <a href="https://wa.me/5511957773366" style="color: #9ca3af; text-decoration: none;">+55 11 95777-3366</a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://www.facebook.com/fonterochabranca/" class="social-link" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com/_rochabranca" class="social-link" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/rochabrancaoficial/" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
                 </div>
                 
                 <div class="footer-description">
