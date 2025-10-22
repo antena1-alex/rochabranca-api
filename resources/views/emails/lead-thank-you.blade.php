@@ -212,24 +212,26 @@
             </div>
             
             <div class="contact-info">
-                <div class="info-row">
-                    <span class="info-label">Nome completo:</span>
-                    <span class="info-value">{{ $contact['first_name'] }} {{ $contact['last_name'] }}</span>
-                </div>
+                <div class="contact-title">Nossos Contatos</div>
                 
                 <div class="info-row">
                     <span class="info-label">Email:</span>
-                    <span class="info-value">{{ $contact['email'] }}</span>
+                    <span class="info-value">atendimento@aguarochabranca.com.br</span>
                 </div>
                 
                 <div class="info-row">
-                    <span class="info-label">Telefone:</span>
-                    <span class="info-value">{{ $contact['phone'] }}</span>
+                    <span class="info-label">WhatsApp:</span>
+                    <span class="info-value">(11) 95777-3366</span>
                 </div>
                 
                 <div class="info-row">
-                    <span class="info-label">Data do contato:</span>
-                    <span class="info-value">{{ now()->format('d/m/Y \à\s H:i:s') }}</span>
+                    <span class="info-label">Localização:</span>
+                    <span class="info-value">Estrada para Votorantim, 1962 - Embu das Artes/SP</span>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Site:</span>
+                    <span class="info-value">www.aguarochabranca.com.br</span>
                 </div>
             </div>
             
