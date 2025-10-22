@@ -85,8 +85,19 @@
             font-weight: 600; 
             margin-bottom: 15px; 
         }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-row {
+            border-bottom: 1px solid #e9ecef;
+        }
         .info-row:last-child {
             border-bottom: none;
+        }
+        .info-row td {
+            padding: 10px 0;
+            vertical-align: top;
         }
         .info-label {
             font-weight: bold;
@@ -94,6 +105,27 @@
         }
         .info-value {
             color: #212529;
+        }
+        .email-info {
+            background-color: #f8f9fa;
+            border-left: 4px solid #08064E;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .email-label {
+            font-size: 12px;
+            font-weight: bold;
+            color: #495057;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .email-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #08064E;
         }
         .footer {
             background: #101828;
@@ -109,11 +141,15 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
+        .footer-table {
+            width: 100%;
+            border-collapse: collapse;
             margin-bottom: 20px;
+        }
+        .footer-table td {
+            width: 50%;
+            padding: 0 15px;
+            vertical-align: top;
         }
         .footer-section h4 {
             color: white;
@@ -122,11 +158,9 @@
             font-size: 16px;
         }
         .contact-item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
             margin-bottom: 10px;
             color: #9ca3af;
+            display: block;
         }
         .contact-icon {
             color: #EF1A9A;
@@ -163,19 +197,18 @@
             padding-top: 20px;
         }
         @media (max-width: 600px) {
-            .info-row {
-                flex-direction: column;
-                gap: 5px;
+            .footer-table td {
+                display: block;
+                width: 100% !important;
+                padding: 10px 0;
             }
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
+            .info-table td {
+                display: block;
+                width: 100% !important;
             }
-        }
-        @media (max-width: 600px) {
-            .info-row {
-                flex-direction: column;
-                gap: 5px;
+            .info-label {
+                display: block;
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -183,7 +216,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://a1media.antena1.com.br/rb/logo/logo-rocha-branca-header.svg" alt="Rocha Branca" style="max-width: 200px; height: auto; margin-bottom: 15px;">
+            <img src="https://a1media.antena1.com.br/rb/logo/logo-rocha-branca-header.svg" alt="Logo Rocha Branca" style="max-width: 200px; height: auto; margin-bottom: 15px;">
             <div class="header-subtitle">Obrigado pelo seu contato!</div>
         </div>
         
@@ -214,25 +247,27 @@
             <div class="contact-info">
                 <div class="contact-title">Nossos Contatos</div>
                 
-                <div class="info-row">
-                    <span class="info-label">Email:</span>
-                    <span class="info-value">atendimento@aguarochabranca.com.br</span>
-                </div>
-                
-                <div class="info-row">
-                    <span class="info-label">WhatsApp:</span>
-                    <span class="info-value">(11) 95777-3366</span>
-                </div>
-                
-                <div class="info-row">
-                    <span class="info-label">Localização:</span>
-                    <span class="info-value">Estrada para Votorantim, 1962 - Embu das Artes/SP</span>
-                </div>
-                
-                <div class="info-row">
-                    <span class="info-label">Site:</span>
-                    <span class="info-value">www.aguarochabranca.com.br</span>
-                </div>
+                <table class="info-table">
+                    <tr class="info-row">
+                        <td><span class="info-label">Email:</span></td>
+                        <td><span class="info-value">atendimento@aguarochabranca.com.br</span></td>
+                    </tr>
+                    
+                    <tr class="info-row">
+                        <td><span class="info-label">WhatsApp:</span></td>
+                        <td><span class="info-value">(11) 95777-3366</span></td>
+                    </tr>
+                    
+                    <tr class="info-row">
+                        <td><span class="info-label">Localização:</span></td>
+                        <td><span class="info-value">Estrada para Votorantim, 1962 - Embu das Artes/SP</span></td>
+                    </tr>
+                    
+                    <tr class="info-row">
+                        <td><span class="info-label">Site:</span></td>
+                        <td><span class="info-value">www.aguarochabranca.com.br</span></td>
+                    </tr>
+                </table>
             </div>
             
             <div class="message">
@@ -253,25 +288,27 @@
                     <img src="https://a1media.antena1.com.br/rb/logo/logo-rocha-branca-header.svg" alt="Rocha Branca" style="max-width: 200px; height: auto;">
                 </div>
                 
-                <div class="footer-grid">
-                    <div class="footer-section">
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Fonte+Rocha+Branca+Estrada+para+Votorantim+1962+Parque+Esplanada+do+Embu+Embu+das+Artes+SP+06844-310" target="_blank" style="color: #9ca3af; text-decoration: none;">Estrada para Votorantim, 1962<br>Vila Maria Auxiliadora<br>Embu das Artes - SP</a>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <a href="mailto:atendimento@aguarochabranca.com.br" style="color: #9ca3af; text-decoration: none;">atendimento@aguarochabranca.com.br</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📱</span>
-                            <a href="https://wa.me/5511957773366" style="color: #9ca3af; text-decoration: none;">+55 11 95777-3366</a>
-                        </div>
-                    </div>
-                </div>
+                <table class="footer-table">
+                    <tr>
+                        <td class="footer-section">
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Fonte+Rocha+Branca+Estrada+para+Votorantim+1962+Parque+Esplanada+do+Embu+Embu+das+Artes+SP+06844-310" target="_blank" style="color: #9ca3af; text-decoration: none; margin-left: 8px;">Estrada para Votorantim, 1962<br>Vila Maria Auxiliadora<br>Embu das Artes - SP</a>
+                            </div>
+                        </td>
+                        
+                        <td class="footer-section">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <a href="mailto:atendimento@aguarochabranca.com.br" style="color: #9ca3af; text-decoration: none; margin-left: 8px;">atendimento@aguarochabranca.com.br</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <a href="https://wa.me/5511957773366" style="color: #9ca3af; text-decoration: none; margin-left: 8px;">+55 11 95777-3366</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
                 
                 <div class="footer-description">
                      © {{ now()->format('Y') }} Rocha Branca. Todos os direitos reservados.
