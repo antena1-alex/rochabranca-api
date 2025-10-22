@@ -30,7 +30,7 @@ class LeadThankYou extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Obrigado pelo seu interesse - Rocha Branca',
+            subject: 'Obrigado pelo seu contato - Rocha Branca',
         );
     }
 
